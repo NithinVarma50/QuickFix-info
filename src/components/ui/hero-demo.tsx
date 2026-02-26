@@ -131,29 +131,6 @@ const HeroDemo = () => {
         <Section className="not-prose">
             <Container>
                 <div className="m-auto flex h-full w-full max-w-5xl flex-col gap-8 px-4 py-4 md:px-6 md:py-10">
-                    {/* Large Text */}
-                    <h1 className="text-3xl font-normal tracking-tight md:text-6xl">
-                        Repair that comes { }
-                        <img
-                            className="my-auto inline w-24 md:w-32 rounded-full mx-2"
-                            width={192}
-                            height={108}
-                            src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=300&h=200"
-                            alt="repair car"
-                        />{" "}
-                        to you. { }
-                        <img
-                            className="my-auto inline w-24 md:w-32 rounded-full mx-2"
-                            width={192}
-                            height={108}
-                            src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=300&h=200"
-                            alt="cars"
-                        />
-                    </h1>
-
-                    <h3 className="text-xl md:text-3xl text-muted-foreground max-w-2xl mt-4">
-                        AI-powered diagnostics. 10-minute dispatch. Professional onsite repair — anywhere, anytime.
-                    </h3>
 
                 </div>
             </Container>
