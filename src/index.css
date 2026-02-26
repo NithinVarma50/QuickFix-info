@@ -103,6 +103,6 @@
   }
 
   .divider-subtle {
-    @apply h-px w-full bg-border;
+    @apply hidden;
   }
 }
