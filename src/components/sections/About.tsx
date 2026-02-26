@@ -23,14 +23,14 @@ const About = () => {
         )}
       />
 
-      <div className="flex w-[90vw] md:w-[70vw] flex-col items-end z-10">
-        <WavePath className="mb-10 w-full" />
+      <div className="content-container relative z-10 flex w-full flex-col items-center">
+        <div className="w-full max-w-5xl">
+          <WavePath className="mb-12 w-full" />
 
-        <div className="flex w-full flex-col items-end">
-          <div className="flex flex-col md:flex-row justify-end w-full">
+          <div className="flex flex-col md:flex-row w-full gap-8 md:gap-12 items-start">
             <motion.p
               {...fadeUp}
-              className="label-sm mb-4 md:mb-0 md:mt-2 md:w-1/4 text-left md:text-right md:mr-8"
+              className="label-sm pt-2 md:w-1/4 shrink-0 text-left"
             >
               What is QuickFix
             </motion.p>
