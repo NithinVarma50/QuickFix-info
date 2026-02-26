@@ -18,7 +18,7 @@ const fadeUp = {
 
 const Technology = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="divider-subtle content-container mb-24 lg:mb-32" />
       <div className="content-container">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-24">

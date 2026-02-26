@@ -9,7 +9,7 @@ const items = [
 
 const Franchise = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="content-container">
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -38,7 +38,7 @@ const Franchise = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="border-border bg-background p-10 [&:not(:last-child)]:border-b sm:[&:nth-child(odd)]:border-r"
+              className="border-border bg-transparent p-10 [&:not(:last-child)]:border-b sm:[&:nth-child(odd)]:border-r"
             >
               <h3 className="heading-md mb-3 text-foreground">{item.title}</h3>
               <p className="body-md">{item.desc}</p>

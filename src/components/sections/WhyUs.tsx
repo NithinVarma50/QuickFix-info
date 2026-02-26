@@ -9,7 +9,7 @@ const reasons = [
 
 const WhyUs = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="content-container">
         <motion.p
           initial={{ opacity: 0, y: 30 }}

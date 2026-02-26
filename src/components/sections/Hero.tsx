@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-transparent">
       {/* Subtle radial glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(0_0%_8%)_0%,_transparent_70%)]" />
 
@@ -43,7 +43,9 @@ const Hero = () => {
           className="flex flex-col items-center gap-4 sm:flex-row"
         >
           <a
-            href="#how-it-works"
+            href="https://quic-fix.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-12 items-center rounded-full bg-primary px-8 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-85"
           >
             Get Started

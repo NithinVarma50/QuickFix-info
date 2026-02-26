@@ -9,21 +9,25 @@ import Testimonials from "@/components/sections/Testimonials";
 import Vision from "@/components/sections/Vision";
 import CallToAction from "@/components/sections/CallToAction";
 import Footer from "@/components/sections/Footer";
+import { ProceduralGroundBackground } from "@/components/ui/animated-pattern-cloud";
 
 const Index = () => {
   return (
-    <main className="bg-background">
-      <Hero />
-      <About />
-      <HowItWorks />
-      <Technology />
-      <Coverage />
-      <Franchise />
-      <WhyUs />
-      <Testimonials />
-      <Vision />
-      <CallToAction />
-      <Footer />
+    <main className="bg-transparent relative">
+      <ProceduralGroundBackground />
+      <div className="relative z-10">
+        <Hero />
+        <About />
+        <HowItWorks />
+        <Technology />
+        <Coverage />
+        <Franchise />
+        <WhyUs />
+        <Testimonials />
+        <Vision />
+        <CallToAction />
+        <Footer />
+      </div>
     </main>
   );
 };

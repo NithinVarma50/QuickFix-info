@@ -10,7 +10,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="section-padding bg-background">
+    <section id="how-it-works" className="section-padding bg-transparent">
       <div className="content-container">
         <motion.p
           initial={{ opacity: 0, y: 30 }}

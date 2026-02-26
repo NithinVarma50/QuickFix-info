@@ -2,9 +2,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const testimonials = [
-  { quote: "I described the sound my car was making. Ten minutes later, a technician was at my door with the right part. Unreal.", name: "Sarah M.", role: "Dubai" },
-  { quote: "This is what car repair should have always been. Fast, transparent, and effortless.", name: "James K.", role: "Riyadh" },
-  { quote: "The AI diagnosed my issue more accurately than two different workshops. I'm never going back.", name: "Layla A.", role: "Abu Dhabi" },
+  { quote: "I described the sound my car was making. Ten minutes later, a technician was at my door with the right part. Unreal.", name: "Priya S.", role: "Mumbai" },
+  { quote: "This is what car repair should have always been. Fast, transparent, and effortless.", name: "Rahul M.", role: "Delhi" },
+  { quote: "The AI diagnosed my issue more accurately than two different workshops. I'm never going back.", name: "Anjali D.", role: "Bengaluru" },
 ];
 
 const Testimonials = () => {
@@ -18,7 +18,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="divider-subtle content-container mb-24 lg:mb-32" />
       <div className="content-container flex flex-col items-center text-center">
         <motion.p
@@ -60,9 +60,8 @@ const Testimonials = () => {
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`h-1.5 rounded-full transition-all duration-500 ${
-                i === current ? "w-8 bg-foreground" : "w-1.5 bg-muted-foreground/30"
-              }`}
+              className={`h-1.5 rounded-full transition-all duration-500 ${i === current ? "w-8 bg-foreground" : "w-1.5 bg-muted-foreground/30"
+                }`}
             />
           ))}
         </div>

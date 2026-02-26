@@ -13,7 +13,7 @@ const fadeUp = {
 
 const About = () => {
   return (
-    <section id="about" className="relative w-full flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background py-20">
+    <section id="about" className="relative w-full flex min-h-screen flex-col items-center justify-center overflow-hidden bg-transparent py-20">
       <div
         aria-hidden="true"
         className={cn(

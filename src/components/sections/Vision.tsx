@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Vision = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="content-container flex flex-col items-center text-center">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

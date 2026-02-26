@@ -3,7 +3,7 @@ import RotatingEarth from "@/components/ui/wireframe-dotted-globe";
 
 const Coverage = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="content-container flex flex-col items-center text-center">
         <motion.p
           initial={{ opacity: 0, y: 30 }}

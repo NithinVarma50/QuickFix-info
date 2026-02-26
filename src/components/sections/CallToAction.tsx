@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const CallToAction = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-transparent">
       <div className="divider-subtle content-container mb-24 lg:mb-32" />
       <div className="content-container flex flex-col items-center text-center">
         <motion.h2
@@ -16,7 +16,9 @@ const CallToAction = () => {
         </motion.h2>
 
         <motion.a
-          href="#"
+          href="https://quic-fix.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
