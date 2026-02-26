@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import RotatingEarth from "@/components/ui/wireframe-dotted-globe";
 
 const Coverage = () => {
   return (
@@ -37,27 +38,14 @@ const Coverage = () => {
           precision-engineered experience from day one.
         </motion.p>
 
-        {/* Minimal globe representation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, delay: 0.4 }}
-          className="relative mt-20 h-64 w-64 md:h-80 md:w-80"
+          className="mt-16"
         >
-          <div className="absolute inset-0 rounded-full border border-border" />
-          <div className="absolute inset-[15%] rounded-full border border-border/60" />
-          <div className="absolute inset-[30%] rounded-full border border-border/40" />
-          {/* Horizontal lines */}
-          <div className="absolute left-0 right-0 top-1/2 h-px -translate-y-1/2 bg-border/50" />
-          <div className="absolute left-[10%] right-[10%] top-[30%] h-px bg-border/30" />
-          <div className="absolute left-[10%] right-[10%] top-[70%] h-px bg-border/30" />
-          {/* Center dot */}
-          <motion.div
-            animate={{ scale: [1, 1.5, 1], opacity: [1, 0.6, 1] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-foreground"
-          />
+          <RotatingEarth width={600} height={500} />
         </motion.div>
       </div>
     </section>

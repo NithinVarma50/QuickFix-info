@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-foreground">FIXD</h3>
+            <h3 className="mb-4 text-lg font-semibold text-foreground">QuickFix</h3>
             <p className="body-md text-sm">
               AI-powered vehicle repair,<br />delivered to your door.
             </p>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className="divider-subtle mt-12 mb-8" />
         <p className="text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} FIXD. All rights reserved.
+          © {new Date().getFullYear()} QuickFix. All rights reserved.
         </p>
       </div>
     </footer>
