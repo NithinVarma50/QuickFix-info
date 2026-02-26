@@ -155,30 +155,6 @@ const HeroDemo = () => {
                         AI-powered diagnostics. 10-minute dispatch. Professional onsite repair — anywhere, anytime.
                     </h3>
 
-                    {/* logo features */}
-                    <div className="flex w-fit max-w-full flex-wrap items-center gap-6 rounded-lg border p-4 mt-8 bg-background shadow-sm">
-                        <p className="font-medium">Trusted by:</p>
-                        <img className="h-8 w-8 object-cover rounded-md" src={Logo} alt="Trusted Logo 1" />
-                        <img className="h-8 w-8 object-cover rounded-md" src={Logo} alt="Trusted Logo 2" />
-                        <img className="h-8 w-8 object-cover rounded-md" src={Logo} alt="Trusted Logo 3" />
-                    </div>
-
-                    {/* End Text */}
-                    <div className="md:text-lg mt-8 flex flex-col md:flex-row gap-6 justify-between items-start md:items-end">
-                        <div>
-                            <p className="hidden md:block">We provide the best roadside assistance.</p>
-                            <div className="grid gap-2 md:flex items-center">
-                                <p className="opacity-70">Experience the future of car repair today.</p>
-                                <a className="transition-all hover:opacity-70 text-primary underline underline-offset-4" href="#">
-                                    Get Started -{`>`}
-                                </a>
-                            </div>
-                        </div>
-
-                        <Button size="lg" className="rounded-full shadow-md">
-                            Download App
-                        </Button>
-                    </div>
                 </div>
             </Container>
         </Section>
