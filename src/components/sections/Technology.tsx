@@ -63,14 +63,16 @@ const Technology = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="relative flex aspect-square items-center justify-center overflow-hidden"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative flex w-full max-w-[300px] md:max-w-full aspect-square md:aspect-auto md:h-[500px] items-center justify-center overflow-visible mx-auto"
           >
-            <InteractiveRobotSpline
-              scene="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode"
-              className="w-full h-full max-w-sm max-h-sm md:max-w-md md:max-h-md"
-            />
+            <div className="absolute inset-0 w-full h-full scale-[1.3] md:scale-[1.1] translate-y-[10%] md:translate-y-0">
+              <InteractiveRobotSpline
+                scene="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
