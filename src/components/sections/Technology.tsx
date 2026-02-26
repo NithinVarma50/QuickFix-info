@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { InteractiveRobotSpline } from "@/components/ui/interactive-3d-robot";
+import { LocationMap } from "@/components/ui/expand-map";
 
 const features = [
   "AI-powered diagnostic engine",
@@ -59,20 +59,15 @@ const Technology = () => {
             </ul>
           </div>
 
-          {/* Right — abstract visual */}
+          {/* Right — Location Map */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex w-full max-w-[300px] md:max-w-full aspect-square md:aspect-auto md:h-[500px] items-center justify-center overflow-visible mx-auto"
+            className="relative flex w-full max-w-[360px] md:max-w-full aspect-square md:aspect-auto md:h-[500px] items-center justify-center overflow-visible mx-auto"
           >
-            <div className="absolute inset-0 w-full h-full scale-[1.3] md:scale-[1.1] translate-y-[10%] md:translate-y-0">
-              <InteractiveRobotSpline
-                scene="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <LocationMap location="Bengaluru, India" coordinates="12.9716° N, 77.5946° E" />
           </motion.div>
         </div>
       </div>
