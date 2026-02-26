@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const reasons = [
-  { title: "10-Minute Response", desc: "From request to dispatch in under ten minutes, every time." },
-  { title: "AI Precision", desc: "Our diagnostic engine identifies issues before a technician arrives." },
-  { title: "Transparent Pricing", desc: "See the full cost upfront. No hidden fees. No surprises." },
-  { title: "Certified Technicians", desc: "Every technician is vetted, trained, and quality-assured." },
+  { title: "Mechanic comes to you", desc: "Professional repairs performed directly at your location." },
+  { title: "Transparent pricing", desc: "Clear upfront costs. No hidden fees. No surprises." },
+  { title: "Verified mechanics", desc: "Every technician is background checked and quality-assured." },
+  { title: "Fast response time", desc: "From request to dispatch in under ten minutes." },
 ];
 
 const WhyUs = () => {

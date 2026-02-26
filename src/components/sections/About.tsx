@@ -32,7 +32,7 @@ const About = () => {
               {...fadeUp}
               className="label-sm mb-4 md:mb-0 md:mt-2 md:w-1/4 text-left md:text-right md:mr-8"
             >
-              Who We Are
+              What is QuickFix
             </motion.p>
 
             <div className="flex flex-col gap-6 md:w-3/4 text-left">
@@ -41,9 +41,8 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.15 }}
                 className="body-lg text-foreground/80 max-w-2xl"
               >
-                We believe vehicle maintenance shouldn't mean losing your day.
-                Our platform combines artificial intelligence with a network of
-                certified technicians to deliver professional repair — right where you are.
+                QuickFix is an on-demand vehicle repair service.
+                A mechanic comes to your location for small fixes.
               </motion.p>
 
               <motion.h2
@@ -51,8 +50,23 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="heading-lg max-w-3xl text-foreground"
               >
-                The smartest way to keep your vehicle running.
+                Bigger repairs at nearby partner workshops.
               </motion.h2>
+
+              <motion.div
+                {...fadeUp}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="w-full mt-10 rounded-2xl overflow-hidden border border-border/50 bg-background/20 backdrop-blur-sm"
+              >
+                <video
+                  src="/videos/hero-video.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto object-cover max-h-[600px]"
+                />
+              </motion.div>
             </div>
           </div>
         </div>

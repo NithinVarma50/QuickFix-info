@@ -22,9 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="heading-xl mb-8 max-w-5xl text-foreground"
         >
-          Repair that comes
-          <br />
-          to you.
+          Your vehicle breaks down. <br />We come to you.
         </motion.h1>
 
         <motion.p
@@ -33,7 +31,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="body-lg mb-12 max-w-xl"
         >
-          AI-powered diagnostics. 10-minute dispatch. Professional onsite repair — anywhere, anytime.
+          On-demand vehicle repair at your location. Fast. Trusted. Stress-free.
         </motion.p>
 
         <motion.div

@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 import { Cpu, Send, Wrench, CreditCard } from "lucide-react";
 
 const steps = [
-  { icon: Cpu, title: "AI Diagnosis", desc: "Describe the issue. Our AI identifies the problem instantly." },
-  { icon: Send, title: "Dispatch", desc: "A certified technician is dispatched to your location in minutes." },
-  { icon: Wrench, title: "Onsite Repair", desc: "Professional repair performed right where you are." },
-  { icon: CreditCard, title: "Payment", desc: "Pay seamlessly through the app. No surprises." },
+  { icon: Send, title: "Request Service", desc: "Tell us what you need and we schedule an immediate dispatch." },
+  { icon: Cpu, title: "Mechanic Arrives", desc: "A certified professional mechanic arrives directly at your location." },
+  { icon: Wrench, title: "Fix & Go", desc: "Your vehicle is repaired swiftly so you can get back on the road." }
 ];
 
 const HowItWorks = () => {
@@ -29,10 +28,10 @@ const HowItWorks = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="heading-lg mb-20 text-center text-foreground"
         >
-          Four steps. That's it.
+          Three steps. That's it.
         </motion.h2>
 
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-16 md:grid-cols-3 lg:gap-8">
           {steps.map((step, i) => (
             <motion.div
               key={step.title}
