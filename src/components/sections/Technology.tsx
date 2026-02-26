@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { InteractiveRobotSpline } from "@/components/ui/interactive-3d-robot";
 
 const features = [
   "AI-powered diagnostic engine",
@@ -38,7 +39,7 @@ const Technology = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="body-lg mb-10"
             >
-              Our proprietary technology stack powers everything — from the moment you describe 
+              Our proprietary technology stack powers everything — from the moment you describe
               a problem to the second it's fixed.
             </motion.p>
             <ul className="space-y-4">
@@ -64,23 +65,12 @@ const Technology = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative flex aspect-square items-center justify-center"
+            className="relative flex aspect-square items-center justify-center overflow-hidden"
           >
-            {/* Concentric circles */}
-            {[1, 2, 3, 4].map((ring) => (
-              <div
-                key={ring}
-                className="absolute rounded-full border border-border"
-                style={{
-                  width: `${ring * 25}%`,
-                  height: `${ring * 25}%`,
-                  opacity: 1 - ring * 0.15,
-                }}
-              />
-            ))}
-            <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-foreground">
-              <span className="text-2xl font-semibold text-primary-foreground">AI</span>
-            </div>
+            <InteractiveRobotSpline
+              scene="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode"
+              className="w-full h-full max-w-sm max-h-sm md:max-w-md md:max-h-md"
+            />
           </motion.div>
         </div>
       </div>
