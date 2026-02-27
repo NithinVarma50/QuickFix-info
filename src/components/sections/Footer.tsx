@@ -39,7 +39,7 @@ const Footer = () => {
             <p className="label-sm mb-4 text-foreground">Social</p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/_quicfix.in/"
+                href="https://www.instagram.com/_quicfix.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-xs text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
