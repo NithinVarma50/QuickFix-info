@@ -29,7 +29,7 @@ const CallToAction = () => {
             Call Us — 7337243180
           </a>
           <a
-            href="https://www.instagram.com/_quicfix.in/"
+            href="https://www.instagram.com/_quicfix.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-14 items-center gap-2 rounded-full border border-border px-10 text-base font-medium text-foreground transition-colors hover:bg-foreground/5"
