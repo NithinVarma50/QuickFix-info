@@ -15,18 +15,29 @@ const CallToAction = () => {
           Ready to experience the difference?
         </motion.h2>
 
-        <motion.a
-          href="https://quic-fix.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex h-14 items-center rounded-full bg-primary px-10 text-base font-medium text-primary-foreground transition-opacity hover:opacity-85"
+          className="flex flex-col items-center gap-6 sm:flex-row"
         >
-          Get Started Now
-        </motion.a>
+          <a
+            href="tel:+917337243180"
+            className="inline-flex h-14 items-center rounded-full bg-primary px-10 text-base font-medium text-primary-foreground transition-opacity hover:opacity-85"
+          >
+            Call Us — 7337243180
+          </a>
+          <a
+            href="https://www.instagram.com/_quicfix.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-14 items-center gap-2 rounded-full border border-border px-10 text-base font-medium text-foreground transition-colors hover:bg-foreground/5"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            Follow on Instagram
+          </a>
+        </motion.div>
       </div>
     </section>
   );

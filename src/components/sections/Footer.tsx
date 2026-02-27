@@ -29,8 +29,8 @@ const Footer = () => {
           <div>
             <p className="label-sm mb-4 text-foreground">Contact</p>
             <ul className="space-y-3">
-              <li className="text-sm text-muted-foreground">hello@fixd.com</li>
-              <li className="text-sm text-muted-foreground">+1 (555) 000-0000</li>
+              <li className="text-sm text-muted-foreground">hello@quickfix.in</li>
+              <li><a href="tel:+917337243180" className="text-sm text-muted-foreground transition-colors hover:text-foreground">+91 73372 43180</a></li>
             </ul>
           </div>
 
@@ -38,15 +38,14 @@ const Footer = () => {
           <div>
             <p className="label-sm mb-4 text-foreground">Social</p>
             <div className="flex gap-4">
-              {["X", "IG", "LI"].map((s) => (
-                <a
-                  key={s}
-                  href="#"
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-xs text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
-                >
-                  {s}
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/_quicfix.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-xs text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+              >
+                IG
+              </a>
             </div>
           </div>
         </div>
