@@ -67,7 +67,7 @@ const Technology = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex w-full max-w-[360px] md:max-w-full aspect-square md:aspect-auto md:h-[500px] items-center justify-center overflow-visible mx-auto"
           >
-            <LocationMap location="Bengaluru, India" coordinates="12.9716° N, 77.5946° E" />
+            <LocationMap location="Hyderabad, India" coordinates="17.3850° N, 78.4867° E" />
           </motion.div>
         </div>
       </div>
